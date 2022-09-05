@@ -1,0 +1,138 @@
+/* google fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    font-family: 'Dosis', sans-serif;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+.navbar{
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+}
+ul{
+    flex: 1;
+    text-align: right;
+}
+ul li{
+    display: inline-block;
+    list-style-type: none;
+    margin: 0 25px;
+}
+ul li a{
+    text-decoration: none;
+    padding: 0 10px;
+    color: #000;
+    position: relative;
+    font-weight: 500;
+}
+ul li a::after{
+    content: '';
+    width: 0;
+    height: 10px;
+    background: #f14a60;
+    position: absolute;
+    left: 50%;
+    top: -35px;
+    transform: translateX(-50%);
+    transition: 0.5s;
+}
+ul li a:hover::after{
+    width: 100%;
+}
+.navbar-icons{
+    margin-left: 40px;
+}
+.navbar-icons img{
+    height: 25px;
+    margin-left: 40px;
+    cursor: pointer;
+}
+.banner{
+    display: flex;
+    margin-top: 80px;
+}
+.left-col,.right-col{
+    flex-basis: 50%;
+}
+.right-col img{
+    width: 90%;
+    margin-left: 90px;
+    margin-bottom: 35px;
+}
+.search-box{
+    width: 45%;
+    display: flex;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #ddd;
+    margin: 5px 0 15px;
+}
+.search-box img{
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+}
+.search-box input{
+    width: 100%;
+    margin-left: 15px;
+    font-size: 15px;
+    border: 0;
+    outline: none;
+}
+.left-col h1{
+    font-size: 80px;
+}
+.left-col h3{
+    font-size: 20px;
+}
+.left-col span{
+    color: #f14a60;
+}
+.left-col p{
+    font-size: 14px;
+    color: #999;
+    margin: 30px 0;
+}
+.btn button{
+    padding: 7px 25px;
+    margin-right: 15px;
+    outline: none;
+    border: 1.3px solid #fb7381;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #fb7381;
+    font-weight: 600;
+    background: transparent;
+}
+.btn .primary-btn{
+    background: linear-gradient(#fb7381,#f14a60);
+    box-shadow: 0 2px 15px rgba(248,38,103,0.26);
+    color: #fff;
+}
+.social-icons{
+    margin-top: 50px;
+    width: 200px;
+    text-align: center;
+    opacity: 0.4;
+    position: relative;
+    margin-left: 160px;
+}
+.social-icons img{
+    height: 20px;
+    margin: 0 14px;
+}
+.social-icons::after{
+    content: '';
+    width: 150px;
+    height: 1px;
+    background: #000;
+    position: absolute;
+    left: -160px;
+    top: 10px;
+}
